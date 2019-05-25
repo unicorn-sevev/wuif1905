@@ -122,83 +122,37 @@ img{
     border-radius: 5px;
     float: left;
 }
-.blogList li{
-    height: 225px;
-    margin-top: 10px;
-    float: left;
-    padding-bottom: 20px;
-    border-bottom: 1px dashed #eeeeee;
+.blogList h1{
+    font-size: 22px;
+    margin-top: 20px;
 }
-.whiteblog .blogBox{
-    height: 165px;
-}
-.blogList li h2{
-    font-size: 16px;
-    color: #333333;
-    text-decoration: none;
-}
-.bolgBox li h2 b{
-    color: red;
-    float: left;
-}
-.bolgBox li h2 p{
-    float: right;
-}
-.bolgBox li h2 p:hover{
-    color: #00c1de;
-}
-.blogBox .blogContent{
-    height: 125px;
-    margin-top: 15px;
-    position: relative;
-}
-.blogContent .Image p{
-    font-size: 14px;
-    padding: 3px 5px;
-    display: block;
-    color: #999999;
-    background: rgba(18,182,221,.8);
-    position: absolute;
-    left: 0;
-    top: -14px;
-}
-.blogContent a{
-    width: 200px;
-    height: 125px;
-    float: left;
-}
-.blogContent p{
-    margin: 15px 0;
-    color: #999999;
-    font-size: 14px;
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp:3;
+.blogList .bloginfo{
+    margin-top: 20px;
     overflow: hidden;
-
+    color: #999;
+    line-height: 34px;
 }
-.blogDate p{
-    width: auto;
-    float: left;
+.blogList .coninfo{
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
 }
-.blogDate p span{
-    color: #096;
+.blogList .context{
+    line-height: 24px;
+    margin-top: 20px;
 }
-.blogDate a{
-    width: 80px;
-    height: 29px;
-    font-size: 16px;
-    line-height: 16px;
+.blogList .context img {
     display: block;
-    padding: 4px 15px;
-    background: #12b7de;
-    color: #fff;
-    border-radius: 3px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: auto;
 }
+
+
+
 .mainRight{
     width: 284px;
     height: auto;
@@ -415,9 +369,9 @@ img{
     background: rgb(131, 175, 155);
 }
 .labelList >a:nth-child(9){
-     width: 65px;
-     background: rgb(138, 155, 15);
- }
+    width: 65px;
+    background: rgb(138, 155, 15);
+}
 .labelList >a:nth-child(10){
     width: 80px;
     background: rgb(235, 104, 65);

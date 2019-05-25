@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: #e9eaed;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    margin-right: 38px;
+    line-height: 60px;;
+    color: #ffffff;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    background: #1c2327;
+}
+.headerBox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.headerBox h1{
+    height: 100%;
+    float: left;
+    margin-right: 82px;
+    font-weight: normal;
+    color: #ffffff;
+
+}
+.headerBox .nav{
+    height: 100%;
+    float: left;
+}
+.nav li{
+    height: 100%;
+    float: left;
+}
+.nav li a:hover{
+    color: #00c1de;
+}
+.headerBox .search{
+    width: 60px;
+    height: 100%;
+    background: #ffffff;
+    float: right;
+}
+.banner{
+    width:1200px;
+    height: auto;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+.slide{
+    width: 100%;
+    background: #ffffff;
+    display: block;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.title{
+    height: 41px;
+    border-bottom: 1px solid #e4e3e3;
+    line-height: 41px;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+
+}
+.title::before{
+    content:" ";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #333333;
+}
+.content h3{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.content p{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.content p input{
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.content .image{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+.content .image img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.content p textarea{
+    width: 99%;
+}
+.content .input{
+    display: block;
+    background: #040404;
+    color: #fff;
+    border: 0;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 5px;
+    float: right;
+}
+.content .messageList{
+    width: 100%;
+    height: auto;
+}
+.messageList li{
+    padding-bottom: 20px;
+    border-bottom: #dedddd 1px dashed;
+}
+.messageList li .ask{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 40px 10px;
+    border-bottom: #ececec 1px solid;
+    position: relative;
+}
+.messageList .ask a{
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+    float: left;
+}
+.messageList .ask img{
+    width: 50px;
+    height: 50px;
+}
+.messageList .ask .date{
+    position: absolute;
+    top: 30px;
+    right: 24px;
+}
+.messageList .answer{
+    padding: 10px 10px;
+    background: #f9f9f9;
+
+}
+footer{
+    background: #373D41;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+    overflow: hidden;
+}
+.Box{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.wxBox {
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.wxBox li {
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+}
+.wxBox img {
+    width: 100px;
+    height: 100px;
+}
+.wxBox li span{
+    position: absolute;
+    bottom: 2px;
+    left: 15px;
+}

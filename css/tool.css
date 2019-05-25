@@ -125,7 +125,6 @@ img{
 .blogList li{
     height: 225px;
     margin-top: 10px;
-    float: left;
     padding-bottom: 20px;
     border-bottom: 1px dashed #eeeeee;
 }
@@ -156,7 +155,7 @@ img{
     font-size: 14px;
     padding: 3px 5px;
     display: block;
-    color: #999999;
+    color: #ffffff;
     background: rgba(18,182,221,.8);
     position: absolute;
     left: 0;
@@ -415,9 +414,9 @@ img{
     background: rgb(131, 175, 155);
 }
 .labelList >a:nth-child(9){
-     width: 65px;
-     background: rgb(138, 155, 15);
- }
+    width: 65px;
+    background: rgb(138, 155, 15);
+}
 .labelList >a:nth-child(10){
     width: 80px;
     background: rgb(235, 104, 65);

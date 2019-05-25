@@ -464,9 +464,23 @@ img{
 .bolgBox li h2 p{
     float: right;
 }
+.bolgBox li h2 p:hover{
+    color: #00c1de;
+}
 .blogBox .blogContent{
     height: 125px;
     margin-top: 15px;
+    position: relative;
+}
+.blogContent .Image p{
+    font-size: 14px;
+    padding: 3px 5px;
+    display: block;
+    color: #999999;
+    background: rgba(18,182,221,.8);
+    position: absolute;
+    left: 0;
+    top: -14px;
 }
 .blogContent a{
     width: 200px;
@@ -482,16 +496,28 @@ img{
     -webkit-box-orient: vertical;
     -webkit-line-clamp:3;
     overflow: hidden;
+
 }
-.blogDate .xinde{
-     width: 76px;
-     margin: 0 20px;
-     float: left;
- }
-.blogContent .yuedu{
+.blogDate p{
+    width: auto;
+    float: left;
+}
+.blogDate p span{
+    color: #096;
+}
+.blogDate a{
     width: 80px;
-    margin: 0 20px;
-    float:right;
+    height: 29px;
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    padding: 4px 15px;
+    background: #12b7de;
+    color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .mainRight{
     width: 284px;
@@ -703,4 +729,38 @@ img{
 .picture2 img{
     width: 244px;
     height: 193px;
+}
+footer{
+    background: #373D41;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+    overflow: hidden;
+}
+.Box{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.wxBox {
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.wxBox li {
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+}
+.wxBox img {
+    width: 100px;
+    height: 100px;
+}
+.wxBox li span{
+    position: absolute;
+    bottom: 2px;
+    left: 15px;
 }
