@@ -60,23 +60,35 @@ img{
     margin: 20px auto;
     border-radius: 5px;
 }
-.banner .bannerLeft{
+.bannerLeft{
     width: 620px;
     height: 100%;
     margin-right: 12px;
     float: left;
     position: relative;
+    overflow: hidden;
 }
-.bannerLeft li{
+.bannerLeft .bannerImg {
     width: 100%;
     height: 100%;
+    position: relative;
 }
-.bannerLeft li a{
+.bannerImg  li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 620px;
+    top: 0;
+}
+.bannerImg > li:first-child{
+    left: 0;
+}
+.bannerImg li a{
     width: 100%;
     height: 100%;
     display: block;
 }
-.btnLeft , .btnRight{
+.leftBtn , .rightBtn{
     width: 40px;
     height: 32px;
     position: absolute;
@@ -84,33 +96,39 @@ img{
     margin-top: -16px;
     coursor:pointer;
     background: black;
+    z-index: 9999;
 }
-.btnRight{
-    right:50px;
+.leftBtn{
+    left:50px;
 }
-.btnLeft{
-    left: 50px;
+.rightBtn{
+    right: 50px;
 }
 .btnList{
-    width: 100%;
-    height: 26px;
+    width: 96px;
+    height: 10px;
     position: absolute;
-    line-height: 40px;
-    bottom: 5px;
-    text-align: center;
-    z-index: 4;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
 }
 .btnList li{
-    display: inline-block;
     width: 10px;
     height: 10px;
-    border-radius: 10px;
-    margin: 0 7px;
-    background: white;
-    cursor: pointer;
-    text-indent: -9999px;
+    margin-right: 14px;
+    float: left;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: 0.5s;
+}
+.btnList > li .hot{
+    background: #046B80;
 }
 .banner .bannerMid{
+    width: auto;
     height: 100%;
     margin-right: 16px;
     float: left;
@@ -118,13 +136,13 @@ img{
 }
 .bannerMid li {
     width: 268px;
-    height: 125px;
+    height: 130px;
     background: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .bannerMid li a{
     width: 100%;
-    height: 125px;
+    height: 130px;
     display: block;
     position: absolute;
     overflow: hidden;
@@ -250,12 +268,24 @@ img{
     float: right;
 }
 .tabList li{
-    height: 34px;
-    margin-bottom: 10px;
+    height: auto;
+    /*height: 34px;*/
+    /*margin-bottom: 10px;*/
     border-radius: 5px;
     position: relative;
     padding-left: 34px;
     line-height: 34px;
+}
+.tabList li p{
+    line-height: 1.5;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 48px;
+    color: #999999;
 }
 .tabList >li::before{
     content: "1";
@@ -506,8 +536,8 @@ img{
     color: #096;
 }
 .blogDate a{
-    width: 80px;
-    height: 29px;
+    width: 64px;
+    height: 22px;
     font-size: 16px;
     line-height: 16px;
     display: block;
@@ -733,6 +763,7 @@ img{
 footer{
     background: #373D41;
     width: 100%;
+    height: auto;
     border-top: #00C1DE 10px solid;
     padding: 30px 0;
     color: #73777a;
